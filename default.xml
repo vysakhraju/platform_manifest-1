@@ -21,6 +21,9 @@
   <remote  name="rr"
 	   fetch="https://github.com/ResurrectionRemix"
 	   revision="nougat" />
+  <remote name="oms"
+          fetch="git://github.com/SubstratumResources"
+          revision="n-mr1-oms7" />
 
   <!-- AOSP Projects -->
 
@@ -498,6 +501,10 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" remote="aosp" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" remote="aosp" />
+  <project path="frameworks/base" name="frameworks_base" remote="oms1" revision="n-mr1-oms7" />
+  <project path="frameworks/native" name="frameworks_native" remote="oms1" revision="n-mr1-oms7" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="oms1" revision="n-mr1-oms7" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="oms1" revision="n-mr1-oms7" />
 
   <include name="snippets/rr-n.xml" />
   <include name="snippets/cm.xml" />
